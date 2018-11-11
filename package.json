@@ -1,0 +1,33 @@
+{
+  "name": "spicyframework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/wdio wdio.conf.js",
+    "allure-report": "node_modules/.bin/allure generate ./reports/allure-results -c && allure open",
+    "unit-test": "node ./node_modules/mocha/bin/mocha src/unitTest"
+  },
+  "author": "Alan Panno",
+  "license": "ISC",
+  "dependencies": {
+    "babel-preset-env": "^1.6.0",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "chai-http": "^4.2.0",
+    "faker": "^4.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "mocha": "^5.2.0",
+    "wdio-allure-reporter": "^0.7.0",
+    "wdio-cucumber-framework": "^2.2.7",
+    "wdio-junit-reporter": "^0.4.4",
+    "wdio-mocha-framework": "^0.6.3",
+    "wdio-selenium-standalone-service": "0.0.10",
+    "wdio-spec-reporter": "^0.1.5",
+    "webdriverio": "^4.13.2"
+  }
+}

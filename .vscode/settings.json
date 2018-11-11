@@ -1,0 +1,15 @@
+{
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+    },
+    "cucumberautocomplete.steps": [
+        "src/features/step_definitions/*.js"
+    ],
+    "cucumberautocomplete.syncfeatures": "src/features/*.feature",
+    "cucumberautocomplete.strictGherkinCompletion": true,
+    "cucumberautocomplete.smartSnippets": true,
+    "cucumberautocomplete.stepsInvariants": true,
+    "editor.tabSize": 2
+}

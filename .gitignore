@@ -1,0 +1,11 @@
+
+*.jpg
+/allure-report
+/logs
+/node_modules
+**/reports
+**/.DS_Store
+**/package-lock.json
+**/yarn.lock
+**/specs
+**/test
