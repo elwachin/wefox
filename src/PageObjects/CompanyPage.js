@@ -1,11 +1,13 @@
 
 class CompanyPage {
 
-  get mainNav() { return browser.element('div.main_nav'); }
+  get mainNav() { return browser.element('h1.wf-u-mb-12'); }
   
-  get pagetitle() { return browser.getTitle(); }
-  
-  get loginButton() { return browser.element('a.btn-login'); }
+  get email() { return browser.element('#username'); }
+
+  get password() { return browser.element('#password'); }
+
+  get loginButton() { return browser.element('button[type=submit]'); }
 
   open(url) {
     browser.url(url);
