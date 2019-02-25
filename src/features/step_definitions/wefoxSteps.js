@@ -24,8 +24,8 @@ When(/^I login$/, () => {
   }, 10000);
   companyPage.email.waitForExist(5000);
   companyPage.email.click();
-  companyPage.email.setValue('asdad');
-  //companyPage.password.setValue('qwertyasdf');
+  companyPage.email.setValue('aqawefox+techtest@wefoxgroup.co');
+  companyPage.password.setValue('qwertyasdf');
   companyPage.loginButton.click();
 });
 
