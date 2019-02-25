@@ -18,9 +18,9 @@ Given(/^I navigate to company page$/, () => {
 When(/^I login$/, () => {
   
   browser.waitUntil(() => {
-    let el = $('div.wf-c-loading');
+    let el = browser.element('div.wf-c-loading');
     console.log(el);
-    return !el.isElementDisplayed();
+    return !(el.isVisible());
   }, 10000);
   companyPage.email.waitForExist(5000);
   companyPage.email.click();
