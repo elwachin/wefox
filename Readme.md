@@ -1,4 +1,4 @@
-# surgimap test framework
+# Wefox test framework
 
 Automation framework for roche using webdriverio as baseframework with extra functionalities. 
 The framework uses cucumber as BBD with werbdriverio to create end to end scenarios
