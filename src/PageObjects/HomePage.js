@@ -7,6 +7,8 @@ class HomePage {
 
   get personalData() { return browser.element('a[icon=profile]')}
   
+  get logout() { return browser.element('a[title=Logout]')}
+  
   iAmOnHomePage() {
     return this.dashboard.waitForVisible();
   }

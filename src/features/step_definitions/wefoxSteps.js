@@ -24,7 +24,7 @@ When(/^I login$/, () => {
   }, 10000);
   companyPage.email.waitForExist(5000);
   companyPage.email.click();
-  companyPage.email.setValue('aqawefox+techtest@wefoxgroup.co');
+  companyPage.email2.setValue('aqawefox+techtest@wefoxgroup.co');
   companyPage.password.setValue('qwertyasdf');
   companyPage.loginButton.click();
 });
@@ -35,17 +35,18 @@ When(/^I am on homepage$/, () => {
 
 When(/^I navigate contracts page$/, () => {
   homePage.contracts.click();
-  assert.isTrue(contractsPage.noContracts.getText().contains('no contracts yet'), 'element not found');
+  contractsPage.noContracts.waitForVisible();
+  assert.isTrue(contractsPage.noContracts.getText().includes('no contracts yet'), 'element not found');
 });
  
 When(/^I navigate to personal data$/, () => {
-  console.log('personal data');
+  homePage.personalData.click();
+
 });
 
-When(/^I logout$/, () => {
-  console.log('personal data');
+Then(/^I logout$/, () => {
+  homePage.logout.click();
+  assert.isTrue(companyPage.logo.waitForVisible(), 'it didnt logout');
 });
-Then(/^I check I am logged out$/, () => {
-  console.log('personal data');
-});
+
  
